@@ -13,7 +13,8 @@
     "gh-api-stream": "^1.0.2",
     "github-url-to-object": "^1.5.2",
     "map-limit": "0.0.1",
-    "npm-stats": "^1.1.0"
+    "npm-stats": "^1.1.0",
+    "package-dependency-stats": "^1.0.0"
   },
   "devDependencies": {
     "faucet": "0.0.1",

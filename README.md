@@ -71,6 +71,11 @@ If `stats` could not be retrieved for that package, it will be null and `error` 
 
 The stats are fetched using [npm-stats](https://www.npmjs.com/package/npm-stats).
 
+## See Also
+
+- [package-dependency-stats](https://github.com/Jam3/package-dependency-stats)
+- [repo-deps](https://github.com/Jam3/repo-deps)
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/Jam3/gh-repo-dependencies/blob/master/LICENSE.md) for details.

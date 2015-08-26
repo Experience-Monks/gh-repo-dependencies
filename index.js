@@ -1,6 +1,6 @@
 var ghApiStream = require('gh-api-stream')
 var ghUrl = require('github-url-to-object')
-var packageDependencies = require('./lib/from-package')
+var packageDependencies = require('package-dependency-stats')
 
 module.exports = ghRepoDependencies
 function ghRepoDependencies (url, opt, cb) {
