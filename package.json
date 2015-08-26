@@ -1,0 +1,52 @@
+{
+  "name": "gh-repo-dependencies",
+  "version": "1.0.0",
+  "description": "list dependencies for a npm module from GitHub url",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "gh-api-stream": "^1.0.2",
+    "github-url-to-object": "^1.5.2",
+    "map-limit": "0.0.1",
+    "npm-stats": "^1.1.0"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "ghauth": "^3.0.0",
+    "standard": "^5.1.0",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "standard && node test.js | faucet"
+  },
+  "keywords": [
+    "get",
+    "repo",
+    "list",
+    "of",
+    "dependencies",
+    "dep",
+    "deps",
+    "gh",
+    "github",
+    "hub",
+    "git",
+    "devDependencies",
+    "package",
+    "json",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/gh-repo-dependencies.git"
+  },
+  "homepage": "https://github.com/Jam3/gh-repo-dependencies",
+  "bugs": {
+    "url": "https://github.com/Jam3/gh-repo-dependencies/issues"
+  }
+}
