@@ -1,4 +1,4 @@
-var ghApiStream = require('gh-api-stream')
+var ghApi = require('gh-api')
 var ghUrl = require('github-url-to-object')
 var packageDependencies = require('package-dependency-stats')
 
@@ -25,15 +25,12 @@ function getPackageJson (opt, callback) {
     query = { ref: opt.ref }
   }
 
-  ghApiStream('repos/' + opt.user + '/' + opt.repo + '/contents/package.json', {
+  ghApi('repos/' + opt.user + '/' + opt.repo + '/contents/package.json', {
     token: opt.token,
     query: query
+  }, function (err, response) {
+    if (err) return callback(err)
+    var packageStr = new Buffer(response.content, 'base64').toString()
+    callback(null, JSON.parse(packageStr))
   })
-    .on('data', function (response) {
-      var packageStr = new Buffer(response.content, 'base64').toString()
-      callback(null, JSON.parse(packageStr))
-    })
-    .on('error', function (err) {
-      callback(err)
-    })
 }
